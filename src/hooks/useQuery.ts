@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChartData, OECD_API_QUERY } from "../logic/oecd_api";
-import { OECD_DATA } from "../types";
+// import { OECD_DATA } from "../types";
 import { useQuery as useReactQuery } from "@tanstack/react-query";
 
 type QueryResult = {
