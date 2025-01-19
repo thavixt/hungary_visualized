@@ -105,7 +105,9 @@ function Chart({ query }: { query: OECD_API_QUERY }) {
           <ReferenceLine x={2014} stroke="#ef4444" strokeDasharray="3 3" />
           <ReferenceLine x={2018} stroke="#ef4444" strokeDasharray="3 3" />
           <ReferenceLine x={2020} stroke="#2563eb" strokeDasharray="3 3" />
-          {query.average ? <ReferenceLine y={query.average} stroke="#eab308" strokeDasharray="3 3" /> : null}
+          {query.average ? (
+            <ReferenceLine y={query.average} stroke="#eab308" strokeDasharray="3 3" />
+          ) : null}
         </LineChart>
       ) : <Loader />}
     </div>

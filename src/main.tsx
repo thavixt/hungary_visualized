@@ -1,4 +1,4 @@
-// import { StrictMode } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
@@ -26,10 +26,9 @@ persistQueryClient({
 })
 
 createRoot(document.getElementById('root')!).render(
-  // TODO: strict mode disabled to avoid spam...
-  // <StrictMode>
+  <StrictMode>
     <QueryClientProvider client={queryClient}>
-    <App />
-  </QueryClientProvider>
-  // </StrictMode>,
+      <App />
+    </QueryClientProvider>
+  </StrictMode>,
 )
