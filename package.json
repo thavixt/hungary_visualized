@@ -1,9 +1,9 @@
 {
   "name": "birthday-problem",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
-  "homepage": "https://thavixt.github.io/birthday-problem/",
+  "homepage": "https://thavixt.github.io/hungary_visualized/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
